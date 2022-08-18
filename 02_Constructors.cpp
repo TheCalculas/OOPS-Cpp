@@ -29,10 +29,18 @@ public:
     // {
     //     cout << "initilizer list initialized" << endl;
     // }
+
+    Student(int roll) : roll(roll)
+    {
+        cout << "initilizer list for roll called" << endl;
+    }
 };
 
 signed main()
 {
+    // how can you call the constructoers :)
+    Student rahul(31, "r");
+    Student sav(71);
     Student st = Student(21, "Student");
     Student *s = new Student(22, "aryan");
     return 0;
